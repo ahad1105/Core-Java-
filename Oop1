@@ -5,11 +5,17 @@ class hello
   int i=7;
   int j=8;
   int result;
+  int result1;
   
   
     public void perform()
     {
         result = i + j;
+    }
+    
+    public void show()
+    {
+      result1 = i - j;
     }
     
 }
@@ -20,10 +26,10 @@ public class Main
   public static void main(String[] args)
   {
     hello obj1 = new hello();
-    //obj1.show();
+    obj1.show();
     obj1.perform();
     System.out.println(obj1.result);
-    //System.out.println(obj1.result);
+    System.out.println(obj1.result1);
   }
 }
 
