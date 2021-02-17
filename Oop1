@@ -2,8 +2,8 @@
 
 class hello
 {
-  int i=7;
-  int j=8;
+  int i;
+  int j;
   int result;
   int result1;
   
@@ -26,6 +26,8 @@ public class Main
   public static void main(String[] args)
   {
     hello obj1 = new hello();
+    obj.i = 3;
+    obj.j = 6;
     obj1.show();
     obj1.perform();
     System.out.println(obj1.result);
