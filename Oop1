@@ -1,0 +1,30 @@
+#classes and objects part1
+
+class hello
+{
+  int i=7;
+  int j=8;
+  int result;
+  
+  
+    public void perform()
+    {
+        result = i + j;
+    }
+    
+}
+
+public class Main
+{
+  
+  public static void main(String[] args)
+  {
+    hello obj = new hello();
+    //obj1.show();
+    obj1.perform();
+    System.out.println(obj1.result);
+    //System.out.println(obj1.result);
+  }
+}
+
+    
