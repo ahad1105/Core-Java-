@@ -2,20 +2,22 @@
 
 class hello
 {
-  int i;
-  int j;
-  int result;
-  int result1;
+  int i=7;
+  int j=6;
   
   
-    public void perform()
+  
+  
+    public perform(int n)
     {
-        result = i + j;
+        int i = n;
+        int j = n;
     }
     
-    public void show()
+    public show(double d)
     {
-      result1 = i - j;
+      int i = n;
+      int j = d;
     }
     
 }
@@ -25,13 +27,12 @@ public class Main
   
   public static void main(String[] args)
   {
-    hello obj1 = new hello();
-    obj.i = 3;
-    obj.j = 6;
+    hello obj1 = new hello(4);
+    
     obj1.show();
     obj1.perform();
-    System.out.println(obj1.result);
-    System.out.println(obj1.result1);
+    System.out.println(obj1.i);
+    System.out.println(obj1.j);
   }
 }
 
