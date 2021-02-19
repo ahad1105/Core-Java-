@@ -27,7 +27,8 @@ public class Main
   
   public static void main(String[] args)
   {
-    hello obj1 = new hello(4);
+    hello obj1 = new hello(4,5.6);
+    
     
     obj1.show();
     obj1.perform();
