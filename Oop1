@@ -8,16 +8,22 @@ class hello
   
   
   
-    public perform(int n)
+    public hello(int n) //default constructor 
     {
         int i = n;
         int j = n;
     }
     
-    public show(double d)
+    public hello(double d) //1st constructor
     {
       int i = n;
-      int j = d;
+      double j = d;
+    }
+    
+    public hello(int n, double d)
+    {
+      int i = n;
+      double j = d;
     }
     
 }
@@ -27,7 +33,8 @@ public class Main
   
   public static void main(String[] args)
   {
-    hello obj1 = new hello(4);
+    hello obj1 = new hello(4,5.6);
+    
     
     obj1.show();
     obj1.perform();
