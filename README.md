@@ -1,2 +1,2 @@
-# First-Code
-Exploring github 
+learning java 
+
