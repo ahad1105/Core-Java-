@@ -1,0 +1,28 @@
+//inheritance example
+// First Parent class 
+class Parent1 
+{ 
+	void fun() 
+	{ 
+		System.out.println("Parent1"); 
+	} 
+} 
+
+// Second Parent Class 
+class Parent2 extends Parent1
+{ 
+	void fun() 
+	{ 
+		System.out.println("Parent2"); 
+	} 
+} 
+
+public class hello
+{
+    public static void main(String args[]) 
+    {    
+	    Parent2 obj = new Parent2();
+	    obj.Parent1();
+	    
+    } 
+} 
