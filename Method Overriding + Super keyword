@@ -1,0 +1,24 @@
+//method overriding - child class method overides the parent class method.
+class Aa
+{
+	public void show()
+	{
+	System.out.println("in A");
+	}
+}
+class Bb extends Aa
+{
+	@override   //base class overrides the parent class, an ovveride keyword can also be used to display.
+  public void show()
+	{
+		System.out.println("in B");
+	}
+}
+public class OverridingDemo 
+{
+	public static void main(String[] args)
+	{
+		Bb obj1 = new Bb();
+		obj1.show();
+	}
+}
