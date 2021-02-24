@@ -1,28 +1,37 @@
-//method overriding - child class method overides the parent class method.
-//in method overriding super keyword is used to call parent class methods/objects or variables
 class Aa
 {
-	int i;
 	public void show()
 	{
-		System.out.println("in A");
+	System.out.println("in A");
 	}
 }
 class Bb extends Aa
 {
-	@override   //base class overrides the parent class, an ovveride keyword can also be used to display.
-  public void show()
+	public void show()
 	{
-		super.i = 8;
-		super.show(); //use of super keyword to call show() method from the main class
 		System.out.println("in B");
+	}
+	public void config() 
+	{
+		System.out.println("config");
+	}
+}
+class C extends Aa
+{
+	public void show()
+	{
+		System.out.println("in C");
 	}
 }
 public class OverridingDemo 
 {
+	// compile time and runtime
 	public static void main(String[] args)
 	{
-		Bb obj1 = new Bb();
+		Aa obj1 = new Bb();  // runtime polymorphism
 		obj1.show();
+		
+		obj1 = new C();
+		obj1.show();  // Dynamic Method Dispatch
 	}
 }
