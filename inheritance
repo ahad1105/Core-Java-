@@ -1,35 +1,16 @@
-//use of abstract keyword
-//using abstract keyword we cannot create an object of a class
 
-abstract class Human  
+class Printer 
 {
-	public abstract void eat() //we can also have an abstract method just for defining.
+	public void show(Number i)  //number i is a abstract class that extends int , float , double values  , so instead of method overriding one can easily call a single method and use Number keyword 
 	{
-		
+		System.out.println(i);
 	}
 	
-	public abstract void walk() //an abstract method should have an abstract class, viceversa is not mandatory. 
-	{
-		
-	}
-}
-class Man extends Human // we can create a child class of an abstract class 
-{
-	public void eat()  //we can instantiate these methods here  
-	{
-		
-	}
-	
-	public void walk()  
-	{
-			
-	}
-}
-
 public class AbstractDemo 
 {
 	public static void main(String[] args)
 	{
-		Human obj = new Man();  //can create a object of abstract class and instantiate it with the child class 
+		Printer obj = new Printer();
+		obj.show(5.4f);
 	}
 }
