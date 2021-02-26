@@ -3,12 +3,12 @@
 
 abstract class Human  
 {
-	public void eat()
+	public abstract void eat() //we can also have an abstract method just for defining.
 	{
 		
 	}
 	
-	public void walk()
+	public abstract void walk() //an abstract method should have an abstract class, viceversa is not mandatory. 
 	{
 		
 	}
