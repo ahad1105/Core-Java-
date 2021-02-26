@@ -13,11 +13,23 @@ abstract class Human
 		
 	}
 }
+class Man extends Human // we can create a child class of an abstract class 
+{
+	public void eat()  //we can instantiate these methods here  
+	{
+		
+	}
+	
+	public void walk()  
+	{
+			
+	}
+}
 
 public class AbstractDemo 
 {
 	public static void main(String[] args)
 	{
-		Human obj = new Man();  //wont instantiate this object of abstract class Human
+		Human obj = new Man();  //can create a object of abstract class and instantiate it with the child class 
 	}
 }
