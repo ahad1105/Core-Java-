@@ -1,28 +1,23 @@
-//inheritance example
-// First Parent class 
-class Parent1 
-{ 
-	void fun() 
-	{ 
-		System.out.println("Parent1"); 
-	} 
-} 
+//use of abstract keyword
+//using abstract keyword we cannot create an object of a class
 
-// Second Parent Class 
-class Parent2 extends Parent1
-{ 
-	void perform() 
-	{ 
-		System.out.println("Parent2"); 
-	} 
-} 
-
-public class hello
+abstract class Human  
 {
-    public static void main(String args[]) 
-    {    
-	    Parent2 obj = new Parent2();
-	    obj.fun();
-	    
-    } 
-} 
+	public void eat()
+	{
+		
+	}
+	
+	public void walk()
+	{
+		
+	}
+}
+
+public class AbstractDemo 
+{
+	public static void main(String[] args)
+	{
+		Human obj = new Man();  //wont instantiate this object of abstract class Human
+	}
+}
