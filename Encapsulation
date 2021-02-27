@@ -1,0 +1,53 @@
+//The only way to acess the variables of a class is through methods.
+//Encapsulation - Binding data through methods.
+//Encapsulation can be achieved through getters and setters used along with this.keyword
+//need of encapsulation - To hide the implementation details from the users, If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. 
+//eclipse ide already has inbuild getters and setters option for your code
+
+// Encapsulation -> Binding data with method
+class Student
+{
+	private int rollno;
+	private String name;
+	
+	public int getRollno() {
+		System.out.println("user is accessing the value");
+		return rollno;
+	}
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+		System.out.println("value of rollno changed");
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	// Getters and Setters
+	
+	
+	
+//	public void setRollno(int r)
+//	{
+//		rollno = r;
+//	}
+//	public int getRollno() 
+//	{
+//		return rollno;
+//	}
+}
+
+public class EncapsulationDemo 
+{
+	public static void main(String[] args)
+	{
+		Student s1 = new Student();
+		s1.setRollno(2);
+		s1.setName("Navin");
+		
+		System.out.println(s1.getRollno());
+		System.out.println(s1.getName());
+	}
+}
