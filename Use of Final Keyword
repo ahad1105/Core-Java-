@@ -1,28 +1,30 @@
 //Final keyword can be used in variables, methods and class
-//Using Final keyword while declaring variable wouldnt support changing the value of the variable later 
+//Final keyword can also be used to prevent inheritance from a particular class 
 
-
-class demo
+final class demo
 {
-    final int a = 7;       //use of final keyword
+    int a = 7;
     public void show()
     {
-        
         System.out.println(a);
     }
+}
+
+class demo1 extends demo
+{
+    
 }
 
 public class Superkeyword
 {
     public static void main(String[] args)
     {
-        demo obj = new demo();   
-        obj.a = 56;                 //an attempt to change the final variable a , would give an error
+        demo1 obj = new demo1();
         obj.show();
         
     }
 }
 
-error -  cannot assign a value to final variable a
-        obj.a = 56;
-           ^
+
+error: cannot inherit from final demo
+class demo1 extends demo
