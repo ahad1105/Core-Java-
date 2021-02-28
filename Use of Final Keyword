@@ -1,18 +1,21 @@
 //Final keyword can be used in variables, methods and class
-//Final keyword can also be used to prevent inheritance from a particular class 
+//Final Keyword can also be used in Methods to prevent method overriding.
 
-final class demo
+class demo
 {
-    int a = 7;
-    public void show()
+    
+    final void show()
     {
-        System.out.println(a);
+        System.out.println("yo");
     }
 }
 
 class demo1 extends demo
 {
-    
+    public void show()
+    {
+        System.out.println("hi"); 
+    }
 }
 
 public class Superkeyword
@@ -25,6 +28,5 @@ public class Superkeyword
     }
 }
 
-
-error: cannot inherit from final demo
-class demo1 extends demo
+error: show() in demo1 cannot override show() in demo
+    public void show()
