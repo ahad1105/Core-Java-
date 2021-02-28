@@ -1,0 +1,28 @@
+//Final keyword can be used in variables, methods and class
+//Using Final keyword while declaring variable wouldnt support changing the value of the variable later 
+
+
+class demo
+{
+    final int a = 7;       //use of final keyword
+    public void show()
+    {
+        
+        System.out.println(a);
+    }
+}
+
+public class Superkeyword
+{
+    public static void main(String[] args)
+    {
+        demo obj = new demo();   
+        obj.a = 56;                 //an attempt to change the final variable a , would give an error
+        obj.show();
+        
+    }
+}
+
+error -  cannot assign a value to final variable a
+        obj.a = 56;
+           ^
