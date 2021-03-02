@@ -1,43 +1,26 @@
-interface uses the keyword "implements" 
-interface can only work with abstract methods , no need to write abstract keyword in an interface class
-interface can be used to achieve multiple inheritance which is not possible in a class 
-interface is use to achieve abstraction(data hiding and showing only necessary data) 
 we cannot create an object of interface we can only create a reference of it. 
+to create an object of interface class we have to create a normal class and implement it using the interface 
 
-interface Writer
+interface Abc
 {
-	void write();
+    void show();
 }
-class Pen implements Writer
+
+
+class demo implements Abc
 {
-	public void write()
-	{
-		System.out.println("Im a Pen");
-	}
+    public void show()
+    {
+        System.out.println("calling object of an interface");
+    }
 }
-class Pencil implements Writer
+
+public class Main
 {
-	public void write()
-	{
-		System.out.println("Im a Pencil");
-	}
-}
-class Kit
-{
-	public void doSomething(Writer p)
-	{
-		p.write();
-	}
-}
-public class InterfaceDemo 
-{
-	public static void main(String[] args)
-	{
-		Kit k = new Kit();
-		Writer p = new Pen();
-		
-		Writer pc = new Pencil();
-		
-		k.doSomething(pc);
-	}
+    public static void main(String[] args)
+    {
+        Abc obj = new demo();
+        obj.show();
+        
+    }
 }
