@@ -1,26 +1,23 @@
-we cannot create an object of interface we can only create a reference of it. 
-to create an object of interface class we have to create a normal class and implement it using the interface 
+//we can also call an object of an interface class using anonymous class 
+//use of anonymous class in interface
 
-interface Abc
+interface Ac
 {
-    void show();
+	void show();
 }
 
-
-class demo implements Abc
+public class AnonymousInterface 
 {
-    public void show()
-    {
-        System.out.println("calling object of an interface");
-    }
-}
-
-public class Main
-{
-    public static void main(String[] args)
-    {
-        Abc obj = new demo();
-        obj.show();
-        
-    }
+	public static void main(String[] args)
+	{
+		Ac obj = new Ac()
+				{
+					public void show()
+					{
+						System.out.println("Im the best");
+					}
+				};
+		
+				obj.show();
+	}
 }
