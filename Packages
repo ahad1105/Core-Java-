@@ -1,0 +1,5 @@
+Package in java is a folder that has a set of classes/interfaces that are used to perform a similar task .
+Package name should be mirror of the Domain name , it should be unique and no one in this world should have the same package name . 
+we can have multiple packages inside one and another 
+if you are using eclipse your package name can be reverse of your domain name
+
