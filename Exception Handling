@@ -2,7 +2,8 @@
 //using try block one can handle the error and using catch block it can catch the error 
 //to be more specific one can use specific exceptions  for eg - Arithmetic Exception in the catch block
 //arithmetic exception extends runtime exception which in short extends exception 
-
+//adding a finally block to print anything irrespective of the try and catch block 
+//try catch and finally acts like if else elif order 
 
 
 
@@ -22,6 +23,10 @@ public class ExceptionDemo
 		{
 			System.out.println("Error ");
 		
+		}
+		finally
+		{
+			System.out.println("Hello");
 		}
 		
 	}
