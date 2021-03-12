@@ -1,5 +1,5 @@
-//We can use multiple catch blocks to print error specific messages 
-//the catch block which has error would be excecuted rest other catch blocks would be ignored
+we can also use the exception catch block that can handle any type of errors , make sure if you are using multiple catch blocks and you want to print multiple errors to rectify them
+then declare exception catch block in the end . 
 
 
 public class ExceptionDemo 
@@ -23,6 +23,10 @@ public class ExceptionDemo
 		catch(ArrayIndexOutOfBoundsException e)
 		{
 			System.out.println("Out of bound error")
+		}
+		catch(Exception e)
+		{
+			System.out.println("Something wrong..");
 		}
 		
 	}
