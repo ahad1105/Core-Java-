@@ -1,0 +1,28 @@
+//try catch blocks are used to handle exceptions in your code 
+//using try block one can handle the error and using catch block it can catch the error 
+//to be more specific one can use specific exceptions  for eg - Arithmetic Exception in the catch block
+//arithmetic exception extends runtime exception which in short extends exception 
+
+
+
+
+public class ExceptionDemo 
+{
+	public static void main(String[] args)
+	{
+		try
+		{
+			int i = 7;
+			int j = 2;
+			int k=i/j;
+			System.out.println("output is " + k);
+			System.out.println("Bye");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Error ");
+		
+		}
+		
+	}
+}
