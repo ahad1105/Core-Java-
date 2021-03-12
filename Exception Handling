@@ -1,4 +1,6 @@
-//we can also handle multiple exceptions using a single catch 
+//We can use multiple catch blocks to print error specific messages 
+//the catch block which has error would be excecuted rest other catch blocks would be ignored
+
 
 public class ExceptionDemo 
 {
@@ -14,12 +16,14 @@ public class ExceptionDemo
 			System.out.println("output is " + k);
 			System.out.println("Bye");
 		}
-		catch(ArithmeticException | ArrayIndexOutOfBoundsException e)
+		catch(ArithmeticException)
 		{
-		
 			System.out.println("Error");
 		}
-		
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Out of bound error")
+		}
 		
 	}
 }
