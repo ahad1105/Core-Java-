@@ -1,0 +1,9 @@
+Threads - small mini processes 
+threads can be used to perform multitasking in a software
+threads are used in gaming - eg(counter strike to perform multitask operations for a user)
+threads can also be used in core processors
+threads are used in web application for eg any e comm websites to interact with user as well as send request to the server 
+threads can be called in java in multiple ways - 
+either by implementing the main cthread class.
+or by running a interface of thread class. 
+by default in every java code we have atleast 1 thread
