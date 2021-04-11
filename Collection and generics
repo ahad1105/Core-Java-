@@ -1,0 +1,22 @@
+collections in java 
+
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+
+Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
+
+Java Collection means a single unit of objects. Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+
+problem with arrays is that we can expand them , for this we can use collections , which acts as a interface . If the number of elements is fixed use arrays or else use collections. 
+
+object types in collections is also known as generics, we can perform multiple operations on collections 
+
+we can also use list to define integer values
+
+we can also use set , but in set we cannot have duplicate values , every element will be unique
+
+we get random values in hash set , using tree set we get sorted values in ascending order. 
+
+we can also work with map , where we have a key value pair . 
+
+
+
